@@ -1,187 +1,249 @@
-html {
-    font-size: 100%;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    background-color: #000000ed;
+/* CSS HEX */
+/*
+--black: #000000ff;
+--oxford-blue: #071d49ff;
+--phthalo-blue: #001489ff;
+--gold-fusion: #8b784aff;
+--white: #ffffffff;
+*/
 
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: #000000ed;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    color: rgb(1, 1, 1);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    line-height: 1.3;
-    font-size: 1rem;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+  font-size: 1rem;
 }
 
-h1{
-    color: black;
+h1 {
+  color: rgb(255, 255, 255);
 }
 
-.container{
-    max-width: auto;
-    margin: 0 auto;
+.container {
+  max-width: auto;
+  margin: 0 auto;
 
-    padding-top: 2.375rem;
-    padding-right: 1.5rem;
-    padding-bottom: 2.375rem;
-    padding-left: 1.5rem;
+  padding-top: 2.375rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2.375rem;
+  padding-left: 1.5rem;
 }
-.container-header{
-    padding-top: 0.375rem;
-    padding-bottom: 0.375rem;
-    background-color: rgb(103, 207, 228);
-}
-
-.container-content{
-    text-align: center;
-    align-items: center;
-    padding-top: 2.375rem;
-    padding-right: 2.5rem;
-    padding-bottom: 2.375rem;
-    padding-left: 2.5rem;
+.container-header {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  background-color: #001489ff;
 }
 
-
-.header-links a{
-    font-weight: 400;
-    font-size: 1.13rem;
-    color: rgb(0, 0, 0);
-    transition: color 350ms ease-in-out;
-    text-decoration: none;
+.container-content {
+  text-align: center;
+  align-items: center;
+  padding-top: 2.375rem;
+  padding-right: 2.5rem;
+  padding-bottom: 2.375rem;
+  padding-left: 2.5rem;
 }
-.header-links a:hover{
-    color: rgb(163, 163, 163);
+
+.header-links a {
+  font-weight: 400;
+  font-size: 1.13rem;
+  color: rgb(255, 255, 255);
+  transition: color 350ms ease-in-out;
+  text-decoration: none;
+}
+.header-links a:hover {
+  color: rgba(255, 255, 255, 0.426);
 }
 .header-links a:not(:last-child) {
-    margin-right: 32px;
+  margin-right: 32px;
 }
 
-.header-toggle span{
-        display: block;
-        width: 26px;
-        height: 2.5px;
-        background-color: rgb(255, 255, 255);
-        transition: all 300ms ease-in-out;
-        transform-origin: 3px 1px;
+.header-toggle span {
+  display: block;
+  width: 26px;
+  height: 2.5px;
+  background-color: rgb(255, 255, 255);
+  transition: all 300ms ease-in-out;
+  transform-origin: 3px 1px;
 }
-.header-toggle span:not(:last-child){
-margin-bottom: 5px;
+.header-toggle span:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 .flex-jc-sb {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.flex-jc-c{
-    display: flex;
-    justify-content: center;
+.flex-jc-c {
+  display: flex;
+  justify-content: center;
 }
 
 .flex-ai-c {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.logo{
-    width: 80px;
+.logo {
+  width: 80px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  transition: background 350ms ease-in-out;
 }
-
-
+.logo:hover {
+  background-color: rgba(240, 248, 255, 0.819);
+}
 
 .button1 {
-    text-decoration: none;
-    align-self: center;
-    display: inline-block;
-    padding: 20px 50px;
-    border-radius: 50px;
-    border: 0;
-    transition: box-shadow .2s, -webkit-box-shadow .2s;
-    box-shadow: transparent 0 0 0 3px, rgba(0, 0, 0, 0.224) 4px 6px 20px;
-    background: linear-gradient(45deg, #a384ff 0%, #0048ff 100%);
-    cursor: pointer;
-    font-weight: 400;
-    font-size: 15px;
-    color: white;
-    transition: opacity 350ms ease-in-out;
+  text-decoration: none;
+  align-self: center;
+  display: inline-block;
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: 0;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  box-shadow: transparent 0 0 0 3px, rgba(0, 0, 0, 0.224) 4px 6px 20px;
+  background: linear-gradient(45deg, #8b784aff 0%, rgb(215, 185, 116) 100%);
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  transition: opacity 350ms ease-in-out;
 }
-.button1:hover{
-    opacity: 0.75;
-        box-shadow: #ffffff 0 0 0 3px, transparent 0 0 0 0;
+.button1:hover {
+  opacity: 0.85;
+  box-shadow: #ffffff 0 0 0 3px, transparent 0 0 0 0;
 }
 
-.carousel{
-    overflow: hidden;
-    background-color: #a384ff;
+.carousel {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
 }
 
 #slider {
-    left: 50%;
-    transform: translateX(-50%);
-    background: #eaeaea;
-    border-radius: 5px;
-    position: relative;
-    width: 1300px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #eaeaea;
+  border-radius: 5px;
+  position: relative;
+  width: 1500px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 400px) {
+  #slider {
+    width: 400px;
+  }
+}
 
-    overflow: hidden;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+#slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 10000%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+#slider ul li {
+  position: relative;
+  height: 100%;
+  margin-bottom: -6px;
+  float: left;
+}
+#slider ul li img {
+  width: 1500px;
+  height: 825px;
+}
+
+@media (max-width: 400px) {
+  #slider ul li img {
+    width: 400px;
+    height: 220px;
   }
-  #slider ul {
-    position: relative;
-    list-style: none;
-    height: 100%;
-    width: 10000%;
-    padding: 0;
-    margin: 0;
-    transition: all 750ms ease;
-    left: 0;
-  }
-  #slider ul li {
-    position: relative;
-    height: 100%;
-   
-    float: left;
-  }
-  #slider ul li img{
-    width: 1300px;
-  }
-   
-  #slider #prev, #slider #next {
-    width: 50px;
-    line-height: 50px;
-    border-radius: 50%;
-    font-size: 2rem;
-    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: all 150ms ease;
-  }
-  #slider #prev:hover, #slider #next:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    text-shadow: 0;
-  }
-  #slider #prev {
-    left: 10px;
-  }
-  #slider #next {
-    right: 10px;
-  }
-.landing{
-    background-color: #ffffff;
-    height: 100vh
+}
+
+#slider #prev,
+#slider #next {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 2.1rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+  background-color: rgba(0, 0, 0, 0.087);
+}
+#slider #prev:hover,
+#slider #next:hover {
+  background-color: rgba(0, 0, 0, 0.69);
+  text-shadow: 0;
+}
+#slider #prev {
+  left: 10px;
+}
+#slider #next {
+  right: 10px;
+}
+#slider .slick-dots {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateY(95%);
+}
+#slider .slick-dots li {
+  margin: 5px;
+}
+
+.slick-dots li button {
+  font-size: 2px;
+  text-decoration: none;
+  display: inline-block;
+  border: 3px;
+  border-radius: 60%;
+  padding: 6px 6px 6px 7px;
+  background-color: #dadadaab;
+  color: transparent;
+  box-shadow: #ffffffd2 0 0 0 3px, transparent 0 0 0 0;
+  transition: background-color 350ms ease-in-out;
+}
+.slick-dots li button:hover {
+  box-shadow: #ffffff 0 0 0 3px, transparent 0 0 0 0;
+  background-color: #383838ab;
+}
+
+.slick-dots .active-tab button{
+  box-shadow: #ffffff 0 0 0 3px, transparent 0 0 0 0;
+  background-color: #383838ab;
+}
+
+.landing {
+  background-color: #000000;
+  height: 100vh;
 }

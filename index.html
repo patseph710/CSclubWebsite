@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="app/styles/style.css" />
+    <link rel="stylesheet" href="app/style/style.css" />
     <title>CS Club</title>
   </head>
   <body>
@@ -29,87 +29,32 @@
       <div class="container-content carousel">
         <div id="slider">
           <ul id="slideWrap"> 
-            <li><img src="https://cdna.artstation.com/p/assets/images/images/041/385/792/large/victor-becker-queen-00.jpg?1631562806" alt=""></li>
+            <li><img src="	https://www.sunysuffolk.edu/images/promo-winter-session-2022.jpg" alt=""></li>
+            <li><img src="	https://www.sunysuffolk.edu/images/promo-winter-concerts-2022.jpg" alt=""></li>
+            <li><img src="https://www.sunysuffolk.edu/images/promo-stem-fall-2022.jpg" alt=""></li>
             <li><img src="images/2.png" alt=""></li>
             <li><img src="images/3.png" alt=""></li>
-            <li><img src="images/4.jpeg" alt=""></li>
-            <li><img src="images/5.webp" alt=""></li>
           </ul>
-          <a id="prev" href="#">&#8810;</a>
-          <a id="next" href="#">&#8811;</a>
+          <a id="prev">&#8810;</a>
+          <ul id="slick-dots" class="slick-dots" role="tablist">
+            <li class="active-tab"><button type="button">0</button></li>
+            <li class=""><button type="button">1</button></li>
+            <li class=""><button type="button">2</button></li>
+            <li class="" ><button type="button">3</button></li>
+            <li class=""><button type="button">4</button></li>
+          </ul>          
+          <a id="next">&#8811;</a>
         </div>
-        
     </header>
 
     <section class="landing flex-jc-c ">
         <div class="container-content">
             <h1>Sergio Reyes</h1>
            <div class="text-description">
-            Hello world; this is a quick demo for a landing page
+              This is a quick demo for carousel section;
            </div>
         </div>
-
     </section>
 
-    
-    <script>
-      var responsiveSlider = function() {
-  
-  var slider = document.getElementById("slider");
-  var sliderWidth = slider.offsetWidth;
-  var slideList = document.getElementById("slideWrap");
-  var count = 1;
-  var items = slideList.querySelectorAll("li").length;
-  var prev = document.getElementById("prev");
-  var next = document.getElementById("next");
-  
-  window.addEventListener('resize', function() {
-    sliderWidth = slider.offsetWidth;
-  });
-  
-  var prevSlide = function() {
-    if(count > 1) {
-      count = count - 2;
-      slideList.style.left = "-" + count * sliderWidth + "px";
-      count++;
-    }
-    else if(count = 1) {
-      count = items - 1;
-      slideList.style.left = "-" + count * sliderWidth + "px";
-      count++;
-    }
-  };
-  
-  var nextSlide = function() {
-    if(count < items) {
-      slideList.style.left = "-" + count * sliderWidth + "px";
-      count++;
-    }
-    else if(count = items) {
-      slideList.style.left = "0px";
-      count = 1;
-    }
-  };
-  
-  next.addEventListener("click", function() {
-    nextSlide();
-  });
-  
-  prev.addEventListener("click", function() {
-    prevSlide();
-  });
-  
-  setInterval(function() {
-    nextSlide()
-  }, 5000);
-  
-  };
-  
-  window.onload = function() {
-  responsiveSlider();  
-  }
-  
-  
-    </script>
-  </body>
+    <script src="App/script/index.js"></script>  </body>
 </html>
