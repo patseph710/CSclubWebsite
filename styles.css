@@ -13,7 +13,7 @@
   h1 {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
+    color: #8b784a;
     -webkit-text-fill-color: white;
   }
   
@@ -27,9 +27,15 @@
     text-align: center;
     color: white;
   }
+
+  h4 {
+    text-align: center;
+    color:#8b784a;
+  }
   
   body {
-    background-color:cornflowerblue;
+    background-color: #001489;
+    /* background-color: #8b784a; */
   }
 
   p {
@@ -56,8 +62,22 @@
     border: dotted white;
   }
 
-    #thanks {
-      text-align: center;
-      color:black;
-      font-weight: bold;
-    }
+  #thanks {
+    text-align: center;
+    color:#8b784a;
+    font-weight: bold;
+  }
+  #calender {
+    justify-content: center;
+    display: flex;
+  }
+  #bulletList {
+    padding-top: 10px;
+    text-align: center;
+    list-style: inside;
+    color: #ffffff;
+    font-size: xx-large;
+  }
+  li {
+    padding: 10px 0px;
+  }
